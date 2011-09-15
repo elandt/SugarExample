@@ -36,5 +36,15 @@ public class SugarActivity extends Activity
         n3.save();
         n4.save();
 
+         n1.setDescription("matrix");
+         n1.setTitle("matrix");
+         n1.save();
+         n2.setDescription("matrix");
+         n2.setTitle("matrix");
+         n2.save();
+         n3.setDescription("matrix");
+         n3.setTitle("matrix");
+         n3.save();
+
     }
 }

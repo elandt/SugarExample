@@ -32,9 +32,17 @@ public class Note extends SugarRecord<Note>{
         return tag;
     }
 
+    public void setDescription(String description){
+        this.description = description;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     @Override
     public String toString() {
-        return  title + " - " + tag;
+        return  title + "id: " + id + " - " + tag + " " + tag.getId();
 
     }
 }
