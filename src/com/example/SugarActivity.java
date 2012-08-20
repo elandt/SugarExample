@@ -12,8 +12,8 @@ public class SugarActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-         Note.deleteAll(this, Note.class);
-        Tag.deleteAll(this, Tag.class);
+         Note.deleteAll(Note.class);
+        Tag.deleteAll(Tag.class);
         initDb();
         Intent intent = new Intent(this, NoteListActivity.class);
         startActivity(intent);

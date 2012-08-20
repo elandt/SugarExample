@@ -18,7 +18,7 @@ public class NoteListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notelist);
 
-        List<Note> notes = Note.listAll(this, Note.class);
+        List<Note> notes = Note.listAll(Note.class);
         setListAdapter(new ArrayAdapter<Note>(this,android.R.layout.simple_list_item_1, notes));
 
         findViewById(R.id.Button01).setOnClickListener(new View.OnClickListener() {
